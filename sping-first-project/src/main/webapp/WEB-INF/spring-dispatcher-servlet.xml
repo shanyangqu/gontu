@@ -1,3 +1,11 @@
+
+<!-- 
+by defult spring is looking for a file named [despatcher servlet name]-servlet.xml 
+located in the application's WebContent/WEB-INF directory
+
+in our case [spring-dispatcher]-servlet
+ -->
+
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
@@ -8,7 +16,7 @@
 
 	<bean name = "/welcome.html" class="uk.com.holychina.HelloController" />
   
-	<bean id="viewResolver"
+ 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
 			<value>/WEB-INF/jsp/</value>

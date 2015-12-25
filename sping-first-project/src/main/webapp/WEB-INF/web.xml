@@ -15,10 +15,23 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
-<!-- 
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/spring-controller-servlet.xml</param-value>
-	</context-param>
--->
+	<!-- or <servlet-mapping> <servlet-name>spring-dispatcher</servlet-name> 
+		<url-pattern>*.jsp</url-pattern> </servlet-mapping> -->
+
+
+	<!-- 
+	    if you do not want to go with default filename as [servlet-name]-servlet.xml 
+		and default location as WebContent/WEB-INF, you can customize this file name 
+		and location by adding the servlet listener ContextLoaderListener in your 
+		web.xml file as follows: 
+		<context-param>
+		 <param-name>contextConfigLocation</param-name> 
+		 <param-value>/WEB-INF/AnyName-servlet.xml</param-value> 
+		</context-param> 
+		
+		<listener> 
+		 <listener-class> org.springframework.web.context.ContextLoaderListener 
+		 </listener-class> 
+		</listener> 
+		 -->
 </web-app>
