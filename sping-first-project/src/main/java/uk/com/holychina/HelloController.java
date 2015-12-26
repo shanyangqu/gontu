@@ -14,6 +14,6 @@ public class HelloController extends AbstractController {
 		ModelAndView welcomePage = new ModelAndView("Hello");
 		welcomePage.addObject("welcomeMsg", "Hi Junchen");
 		return welcomePage;
-	}
+	} 
  
 }
