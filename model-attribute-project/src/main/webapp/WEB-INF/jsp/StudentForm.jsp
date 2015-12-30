@@ -12,7 +12,14 @@
 	<p>	 student hobby
 		<input type="text" name="studentHobby" id="studentHobby"/> 
 	</p>
-		<input type="submit" value="submit form" />
+    <p>	 student gender
+		<input type="text" name="studentGender" id="studentGender"/> 
+	</p>
+    <p>	 student nickName
+		<input type="text" name="studentNickName" id=""studentNickName""/> 
+	</p>
+	
+	<input type="submit" value="submit form" />
 	</form>
 </body>
 </html>

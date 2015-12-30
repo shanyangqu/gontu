@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import uk.com.holychina.student.model.Student;
+import uk.com.holychina.student.model.StudentInfo;
 
 
 @Controller
@@ -20,7 +21,7 @@ public class StudentController {
 	}
 	
 	@RequestMapping(value = "/submitStudentForm.html", method= RequestMethod.POST)
-	public ModelAndView processStudentForm(@ModelAttribute("student1") Student student1 ){
+	public ModelAndView processStudentForm(@ModelAttribute("student1") Student student1 ,@ModelAttribute("studentInfo1") StudentInfo studentInfo1 ){
 		ModelAndView mv = new ModelAndView("StudentFormSuccess");
 		return mv;
 	}
