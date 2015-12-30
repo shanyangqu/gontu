@@ -4,7 +4,7 @@
 <head>
 </head>
 <body>
-	<h1>Student Admission Form</h1>
+	<h1>${headMsg}</h1>
 	<form action="/model-attribute-project/submitStudentForm.html" method="post">
 	<p> student name
 		<input type="text" name="studentName" id="studentName" /> 

@@ -1,6 +1,7 @@
 package uk.com.holychina.student;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,6 +15,12 @@ import uk.com.holychina.student.model.StudentInfo;
 @Controller
 public class StudentController {
  
+	//or return type volid
+	@ModelAttribute
+	void addCommonValue(Model m){
+		m.addAttribute("headMsg", "Hello From Junchen");
+	}
+	
 	@RequestMapping(value = "/studentForm.html", method= RequestMethod.GET)
 	public ModelAndView displayStudentForm(){
 		ModelAndView mv = new ModelAndView("StudentForm");
